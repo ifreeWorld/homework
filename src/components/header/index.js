@@ -1,14 +1,14 @@
-import 'index.less'
+import './index.less'
 class Header {
   init() {
-
+    return this.render()
   }
 
   render() {
-    return ``
+    return `
+      
+    `
   }
 }
 
-const header = new Header()
-header
 export default new Header()

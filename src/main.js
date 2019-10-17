@@ -1,11 +1,18 @@
 import './main.less'
 import './common/flexible.js'
-import header from 'header'
+import header from './components/header'
 
-class main {
+class Main {
   init() {
-    header.render()
+    document.getElementById('app').appendChild(this.render())
+  }
+
+  render() {
+    return `
+      ${header.init()}
+    `
   }
 }
 
-export default main
+const main = new Main()
+main.init()

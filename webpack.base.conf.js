@@ -86,7 +86,7 @@ module.exports = {
       title: 'cruise',
       filename: 'index.html',
       template: 'public/index.html',
-      favicon: './assets/logo/logo.svg'
+      favicon: './src/assets/logo/logo.svg'
     })
   ]
 }
