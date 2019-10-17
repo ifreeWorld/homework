@@ -34,15 +34,45 @@
     vertical-align: middle;
   }
 
-  .user-popup {
-    width: 140px;
-    height: 92px;
-    border: 1px solid #d3d3d3;
-    border-radius: 50%;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    background: #fff;
+  .user {
+    position: relative;
+    height: 70px;
+    line-height: 70px;
+    cursor: pointer;
+
+    .user-popup {
+      display: none;
+      width: 140px;
+      border: 1px solid #d3d3d3;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: #fff;
+      padding: 10px 0;
+
+      .user-popup-item {
+        height: 32px;
+        line-height: 32px;
+        padding: 0 15px;
+
+        .popup-icon {
+          display: inline-block;
+          width: 20px;
+        }
+
+        &:hover {
+          background: #efefef;
+        }
+      }
+    }
+
+    &:hover {
+      .user-popup {
+        display: block;
+      }
+    }
   }
 }
 

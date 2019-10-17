@@ -1,6 +1,7 @@
 import './main.less'
 import './common/flexible.js'
 import header from './components/header'
+import footer from './components/footer'
 
 class Main {
   init() {
@@ -8,9 +9,14 @@ class Main {
   }
 
   render() {
-    return `
+    const html = `
       ${header.init()}
+      ${footer.init()}
     `
+
+    const dom = document.createElement('div')
+    dom.innerHTML = html
+    return dom
   }
 }
 
