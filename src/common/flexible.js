@@ -5,7 +5,8 @@
   // adjust body font size
   function setBodyFontSize () {
     if (document.body) {
-      document.body.style.fontSize = (14 * dpr) + 'px'
+      // document.body.style.fontSize = (14 * dpr) + 'px'
+      document.body.style.fontSize = '14px'
     } else {
       document.addEventListener('DOMContentLoaded', setBodyFontSize)
     }

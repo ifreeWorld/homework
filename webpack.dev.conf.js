@@ -14,7 +14,7 @@ const webpackConfig = merge(base, {
   devServer: {
     contentBase: '/',
     publicPath: '/',
-    host: 'localhost',
+    // host: 'localhost',
     port: 9000,
     hot: true,
     historyApiFallback: true,
