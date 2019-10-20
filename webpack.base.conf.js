@@ -48,7 +48,7 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: '[path]/dist/img/[name].[hash:7].[ext]'
+          name: 'img/[name].[hash:7].[ext]'
         }
       },
       // 字体loader，my-font.woff，此处没有引入字体
@@ -57,7 +57,7 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: '[path]/dist/fonts/[name].[hash:7].[ext]'
+          name: 'fonts/[name].[hash:7].[ext]'
         }
       },
       {
@@ -65,7 +65,7 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: '[path]/dist/media/[name].[hash:7].[ext]'
+          name: 'media/[name].[hash:7].[ext]'
         }
       },
       {
