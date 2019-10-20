@@ -48,7 +48,7 @@ class Menu {
 
   render() {
     return `
-      <div class="menu" id="menu">
+      <div class="menu col-xl-6 col-lg-6 col-md-8 col-sm-16" id="menu">
         <div class="menu-close icon-close"></div>
         <div class="nav">
           <div class="nav-item">

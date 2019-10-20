@@ -9,11 +9,13 @@ class Content {
 
   render() {
     return `
-      <div class="content">
-        ${menu.init()}
-        <div class="right-content">
-          ${cardList.init()}
-          ${agent.init()}
+      <div class="content grid-container">
+        <div class="row" style="height:100%;">
+          ${menu.init()}
+          <div class="right-content col-xl-18 col-lg-18 col-md-24 col-sm-24">
+            ${cardList.init()}
+            ${agent.init()}
+          </div>
         </div>
       </div>
     `

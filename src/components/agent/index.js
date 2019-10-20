@@ -148,7 +148,7 @@ class Agent {
   renderTr() {
     const html = data.map(item => {
       return `
-        <div class="agent-list-tr ${this.getTag(item.status)}">
+        <div class="agent-list-tr ${this.getTag(item.status)} ${item.deny ? 'deny' : ''}">
           <div class="tr-large-icon ${item.system}"></div>
           <div class="tr-content">
             <div class="tr-content-top">
@@ -196,6 +196,12 @@ class Agent {
                   `
   }).join('')}
               </div>
+              ${item.deny ? `
+                <div class="deny">
+                  <i class="icon-deny"></i>
+                  <span>Deny</span>
+                </div>
+              ` : ''}
             </div>
           </div>
         </div>
