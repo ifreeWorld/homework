@@ -1,0 +1,73 @@
+[
+  {
+    "system": "windows",
+    "name": "bjstdmngbgr01.thoughtworks.com",
+    "status": 0,
+    "ip": "192.168.1.102",
+    "path": "/var/lib/cruise-agent",
+    "browers": [
+      "Firefox",
+      "Safari",
+      "Ubuntu",
+      "Chrome"
+    ]
+  },
+  {
+    "system": "windows",
+    "name": "bjstdmngbgr08.thoughtworks.com",
+    "status": 1,
+    "ip": "192.168.1.243",
+    "path": "/var/lib/cruise-agent",
+    "browers": [
+      "Firefox",
+      "Safari",
+      "Ubuntu",
+      "Chrome"
+    ]
+  },
+  {
+    "system": "ubuntu",
+    "name": "bjstdmngbgr10.thoughtworks.com",
+    "status": 1,
+    "ip": "192.168.1.80",
+    "path": "/var/lib/cruise-agent",
+    "browers": [
+      "Firefox",
+      "Safari"
+    ]
+  },
+  {
+    "system": "debin",
+    "name": "bjstdmngbgr11.thoughtworks.com",
+    "status": 1,
+    "ip": "192.168.1.117",
+    "path": "/var/lib/cruise-agent",
+    "browers": [
+      "Firefox",
+      "Safari",
+      "Ubuntu",
+      "Chrome"
+    ]
+  },
+  {
+    "system": "suse",
+    "name": "bjstdmngbgr15.thoughtworks.com",
+    "status": 0,
+    "ip": "192.168.1.110",
+    "path": "/var/lib/cruise-agent",
+    "browers": []
+  },
+  {
+    "system": "cent_os",
+    "name": "bjstdmngbgr04.thoughtworks.com",
+    "status": 0,
+    "ip": "192.168.1.104",
+    "path": "/var/lib/cruise-agent",
+    "browers": [
+      "Firefox",
+      "Safari",
+      "Ubuntu",
+      "Chrome"
+    ]
+  }
+]

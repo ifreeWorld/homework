@@ -6,7 +6,7 @@ import content from './components/content'
 
 class Main {
   init() {
-    document.getElementById('app').appendChild(this.render())
+    document.getElementById('app').innerHTML = this.render()
     window.onload = function() {
       document.body.classList.remove('preload')
     }
@@ -15,13 +15,10 @@ class Main {
   render() {
     const html = `
       ${header.init()}
-      ${footer.init()}
       ${content.init()}
+      ${footer.init()}
     `
-
-    const dom = document.createElement('div')
-    dom.innerHTML = html
-    return dom
+    return html
   }
 }
 

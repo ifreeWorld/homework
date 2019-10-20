@@ -12,6 +12,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
+    padding: 8px;
   }
 
   .nav {
@@ -39,6 +40,11 @@
         font-size: 14px;
       }
 
+      &:hover {
+        background: #435466;
+        color: #00b4cf;
+      }
+
       &.active {
         background: #435466;
         color: #00b4cf;
@@ -57,8 +63,8 @@
     box-sizing: border-box;
 
     .history-title {
-      font-size: 18px;
-      color: #babcbe;
+      font-size: 24px;
+      color: #ccc;
     }
 
     .history-list {
@@ -68,13 +74,32 @@
 
       .history-item {
         width: 100%;
+        cursor: pointer;
+        position: relative;
+        list-style: none;
 
         .history-desc {
+          font-size: 12px;
+          color: #999;
           padding: 5px 0;
           width: 100%;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+
+          &:hover {
+            color: #00b4cf;
+          }
+        }
+
+        .history-point {
+          position: absolute;
+          top: 10px;
+          left: -20px;
+          background: #999;
+          border-radius: 50%;
+          width: 5px;
+          height: 5px;
         }
       }
     }
@@ -90,6 +115,7 @@
     top: -70px;
     left: 0;
     opacity: 0;
+    z-index: 10;
     transition: 0.3s;
 
     .menu-close {

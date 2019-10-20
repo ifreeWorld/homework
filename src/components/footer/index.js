@@ -6,6 +6,10 @@ class Footer {
 
   render() {
     return `
+      <div class="footer">
+        <i class="copyright"></i>
+        Copyright 2017 ThoughtWorks
+      </div>
     `
   }
 }

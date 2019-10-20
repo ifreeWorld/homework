@@ -1,6 +1,7 @@
 import './index.less'
 import menu from '../menu'
 import cardList from '../card-list'
+import agent from '../agent'
 class Content {
   init() {
     return this.render()
@@ -8,8 +9,13 @@ class Content {
 
   render() {
     return `
-      ${menu.init()}
-      ${cardList.init()}
+      <div class="content">
+        ${menu.init()}
+        <div class="right-content">
+          ${cardList.init()}
+          ${agent.init()}
+        </div>
+      </div>
     `
   }
 }
