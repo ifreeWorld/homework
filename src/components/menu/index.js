@@ -14,7 +14,7 @@ class Menu {
     })
   }
 
-  callback(e) {
+  callback(event) {
     const target = event.target
     const parentObj = this.isParent(target, 'nav-item')
 

@@ -15,7 +15,7 @@ class Agent {
     })
   }
 
-  callback(e) {
+  callback(event) {
     const target = event.target
     if (target.classList.contains('agent-add')) {
       this.showModal(target)
@@ -91,7 +91,13 @@ class Agent {
 
   delete(target) {
     const brower = target.parentNode
-    brower.parentNode.removeChild(brower)
+    console.log(navigator.userAgent)
+    // IE不支持remove()方法
+    if (navigator.userAgent.indexOf('IE') !== -1) {
+      brower.parentNode.removeChild(brower)
+    } else {
+      brower.remove()
+    }
   }
 
   find(parent, label) {

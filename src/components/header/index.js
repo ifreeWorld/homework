@@ -14,7 +14,7 @@ class Header {
     })
   }
 
-  callback(e) {
+  callback(event) {
     const target = event.target
     if (target.classList.contains('left-icon')) {
       document.getElementById('menu').classList.add('active')
